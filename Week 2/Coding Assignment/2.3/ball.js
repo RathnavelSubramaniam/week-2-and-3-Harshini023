@@ -24,7 +24,7 @@ function moveBall() {
     ball.style.left=positionX +"px";
     positionY=positionY - velocity;
     ball.style.top=positionY +"px";
-    if(positionX==xmin)
+    if((positionX>Xmax)||(positionX==Xmin)||(positionY>Ymax)||(positionY==Ymin))
     {
       reverse=true;
     }
